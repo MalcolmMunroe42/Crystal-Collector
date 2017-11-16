@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+
+  	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron">
+		
+			<h1 style="text-align: center;">Crystals Collector!</h1>
+
+			<h5>A random number at the start of the game.</h5>
+			<h5>Click on a crystal to add a specific amount of points to your total score.</h5>
+			<h5>You win if you match your total score to random number. You lose if your total score goes above the random number.</h5>
+			<h5>You won't know the value of each crystal until you click on it.</h5>
+			<h5>Each time the game starts, the values of each crystal will change</h5>
+		
+		</div>
+
+		<div class="row">			
+			<div class="col-md-3 col-md-offset-1 tallyDiv">
+				<p id="winTally">Wins: </p>
+				<p id="lossTally">losses: </p>
+			</div>
+			<div class="col-md-3 col-md-offset-1 randomNumDiv">
+				<h2 id="randomNum">random#</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1 col-md-offset-1 gem" value="gem1">
+				<img src="assets/images/diamond.png" class="img-responsive">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem2">
+				<img src="assets/images/emerald.png" class="img-responsive">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem3">
+				<img src="assets/images/ruby.png" class="img-responsive">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem4">
+				<img src="assets/images/topaz.png" class="img-responsive">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<p>Your total score is:</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<h2 id="userScore">score</h2>
+			</div>
+		</div>
+	
+	</div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+
+.row {
+	margin-bottom: 10px;
+}
+
+.randomNumDiv {
+	background-color: #0ed3b6;
+}
+
+.tallyDiv {
+	background-color: #d63b11;
+}
+
+.gem {
+	display: inline-block;
+}
